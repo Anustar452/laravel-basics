@@ -18,11 +18,12 @@
     <body class="antialiased">
         <div class="relative sm:flex sm:justify-center sm:items-center min-h-screen bg-dots-darker bg-center bg-gray-100 dark:bg-dots-lighter dark:bg-gray-900 selection:bg-red-500 selection:text-white">
             <div style="color: white">
+                <h1>TodoList</h1></br>
                 <form action="{{ route('saveItem')}}" method="POST" accept-charset="UTF-8">
                     {{ csrf_field() }}
-                    <label for="listItem">New Todo Item</label></br>
-                    <input type="text" name="listItem"></br>
-                    <button type="submit">Save Item</button>
+                    <label for="listItem">New Todo Item</label></br></br>
+                    <input type="text" name="listItem"></br></br>
+                    <button type="submit" style="background: #4b5563">Save Item</button>
                 </form>
             </div>
         </div>
